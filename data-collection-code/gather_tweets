@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Author: Sanittawan Tan
+# Date: 20/20/2020
+
+# thai language: th
+
+# twitterscraper รัฐบาลเตรียมพร้อม --limit 1000 --lang th -bd 2020-01-28 -ed 2020-02-20 --profiles --output=thaitweetstest.json
+
+# break the data gathering down to 1 week interval
+# call without any limit
+
+twitterscraper รัฐบาลเตรียมพร้อม --lang th -bd 2020-02-13 -ed 2020-02-20 --output=thaitweetsFeb13-20.json
+
+twitterscraper รัฐบาลเตรียมพร้อม --lang th -bd 2020-02-05 -ed 2020-02-12 --output=thaitweetsFeb05-12.json
+
+twitterscraper รัฐบาลเตรียมพร้อม --lang th -bd 2020-01-28 -ed 2020-02-04 --output=thaitweetsJan28-04.json
+
+# gather twitter users (customize)
+
+twitterscraper mmmmmmmz5 --user -o mmmmmmmz5.json --profiles -ow
